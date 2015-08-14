@@ -1,0 +1,65 @@
+<% provide(:about, 'active') %>
+<% provide(:title, 'About') %>
+  <!--couresel -->
+  <div id="myCarousel" class="carousel slide">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li  data-target="#myCarousel" data-slide-to="0"></li>
+      <li  data-target="#myCarousel" data-slide-to="1"></li>
+      <li  data-target="#myCarousel" data-slide-to="2"></li>
+      <li  data-target="#myCarousel" data-slide-to="3"></li>
+      <li  data-target="#myCarousel" data-slide-to="4"></li>
+      
+
+
+
+    </ol>
+   
+    <div class="carousel-inner">
+        
+        <div class= "item active">
+          
+          <%= link_to image_tag('slide1.jpg',:alt => 'slide1'),:class => "img-responsive" %><br /> 
+          <div class="carousel-caption">
+            <h3>Designed by Lt Col Indrajit Gupta</h3>
+            <p>Learnt how to make a bootstrap carousel.</p>
+            
+          </div>
+
+
+
+        </div>
+        
+
+
+
+
+        <div class= "item">
+          <%= link_to image_tag('slide2.jpg',:alt => 'slide2'),:class => "img-responsive" %><br /> 
+        </div>
+
+        <div class= "item">
+            <%= link_to image_tag('slide3.jpg',:alt => 'slide3'),:class => "img-responsive" %><br /> 
+        </div>
+
+        <div class= "item">
+            <%= link_to image_tag('slide4.jpg',:alt => 'slide4'),:class => "img-responsive" %><br /> 
+        </div>
+
+        <div class= "item">
+            <%= link_to image_tag('slide5.jpg',:alt => 'slide5'),:class => "img-responsive" %><br /> 
+        </div>
+
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="icon-prev"></span></a>
+
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="icon-next"></span></a>
+
+  </div>
+    <!--End couresel -->
+
+   
